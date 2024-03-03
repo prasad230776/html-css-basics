@@ -7,10 +7,15 @@
     <style>
       ul li{
         font-family: Arial, Helvetica, sans-serif;
+        
       }
+    ul li{
+      margin-bottom: 5px;;
+    }
       .flex-box {
         margin: auto;
-        width: 80%;
+        /* width: 70%; */
+        /* min-width:630px; */
         min-height: 100vh;
         background-color: aliceblue;
         border-radius: 20px;
@@ -25,12 +30,24 @@
       }
       .inner-div{
         padding:10px;
-        width:40%;
+        /* width:50%; */
+        /* min-width:600px; */
         border:1px solid lightgray;
         box-shadow: 0 0 10px gainsboro;
         border-radius: 14px;
         margin-bottom: 15px;
 
+      }
+      h1{
+        margin-bottom: 5px;
+      }
+      @media(width>1200px) {
+        .flex-box {
+          width:70%;
+        }
+        .inner-div{
+          width:50%;
+        }
       }
     </style>
   </head>
@@ -38,7 +55,7 @@
     <div class="flex-box">
       <h1>welcome</h1>
       <h3>Please complete the following tasks</h3>
-      <hr />
+      
       <div class="inner-div">
         <ol>
           <li>
@@ -66,7 +83,7 @@
             >
           </li>
         </ul>
-        <hr />
+        <!-- <hr /> -->
         <h4><u>After CSS</u></h4>
         <ul>
           <li>
@@ -104,10 +121,8 @@
           <h3>Optional Practice ( Good to do ..)</h3>
           <ul>
             <li>
-              Clone this page with exact functionality and design and publish on netlify through github
-            </li>
-           
-                    
+              Clone this page with exact look, functionality, responsiveness ( looks good on mobile too) and publish on netlify through github
+            </li>         
           </ul>
         </li>
       </ol>
