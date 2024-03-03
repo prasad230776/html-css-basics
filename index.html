@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      ul li{
+        font-family: Arial, Helvetica, sans-serif;
+      }
       .flex-box {
         margin: auto;
         width: 80%;
@@ -20,42 +23,95 @@
       a {
         text-decoration: none;
       }
+      .inner-div{
+        padding:10px;
+        width:40%;
+        border:1px solid lightgray;
+        box-shadow: 0 0 10px gainsboro;
+        border-radius: 14px;
+        margin-bottom: 15px;
+
+      }
     </style>
   </head>
   <body>
     <div class="flex-box">
       <h1>welcome</h1>
-      <h2>please complete the following three pages</h2>
+      <h3>Please complete the following tasks</h3>
       <hr />
-      <h2><u>Before CSS</u></h2>
-      <ul>
+      <div class="inner-div">
+        <ol>
+          <li>
+        <h3>HTML Practice</h3></li>
+        <ul>
+          <li><a href="https://luxury-gumdrop-fdae56.netlify.app/" target="_blank">Simple 3 pages website</a></li>
+        </ul>
+        <br>
         <li>
-          <a href="./begin/blogpage.html" target="_blank">Simple Blog Page</a>
+          <h3>CSS Practice</u></h3>
+        </li>
+        <h4><u>Before CSS</u></h4>
+        <ul>
+          <li>
+            <a href="./begin/blogpage.html" target="_blank">Simple Blog Page</a>
+          </li>
+          <li>
+            <a href="./begin/simpleprofile.html" target="_blank"
+              >Simple Portfolio</a
+            >
+          </li>
+          <li>
+            <a href="./begin/basicportfolio.html" target="_blank"
+              >Basic Portfolio</a
+            >
+          </li>
+        </ul>
+        <hr />
+        <h4><u>After CSS</u></h4>
+        <ul>
+          <li>
+            <a href="./end/blog-end/" target="_blank">Simple Blog Page</a>
+          </li>
+          <li>
+            <a href="./end/profile-end/" target="_blank">Simple Portfolio</a>
+          </li>
+          <li>
+            <a href="./end/profile2-end/" target="_blank">Basic Portfolio</a>
+          </li>
+        </ul>
+        <li>
+          <h3>Git & Github practice</h3>
+          <ul>
+            <li>Push the above repositories with proper folder structure into github ( with student account )
+
+            </li>
+                  
+          </ul>
         </li>
         <li>
-          <a href="./begin/simpleprofile.html" target="_blank"
-            >Simple Portfolio</a
-          >
+          <h3>Publishing on web</h3>
+          <ul>
+            <li>
+              Publish the above repos on netlify using github
+            </li>
+            <li>
+              Make changes in the websites and push the changes into github and observe those changes reflecting in netlify sites automatically
+            </li>
+                    
+          </ul>
         </li>
         <li>
-          <a href="./begin/basicportfolio.html" target="_blank"
-            >Basic Portfolio</a
-          >
+          <h3>Optional Practice ( Good to do ..)</h3>
+          <ul>
+            <li>
+              Clone this page with exact functionality and design and publish on netlify through github
+            </li>
+           
+                    
+          </ul>
         </li>
-      </ul>
-      <hr />
-      <h2><u>After CSS</u></h2>
-      <ul>
-        <li>
-          <a href="./end/blog-end/" target="_blank">Simple Blog Page</a>
-        </li>
-        <li>
-          <a href="./end/profile-end/" target="_blank">Simple Portfolio</a>
-        </li>
-        <li>
-          <a href="./end/profile2-end/" target="_blank">Basic Portfolio</a>
-        </li>
-      </ul>
+      </ol>
+      </div>
     </div>
   </body>
 </html>
